@@ -1,0 +1,22 @@
+[
+  {
+    "id": "sdfdsfdsfd",
+    "user_id": "fgfdgerrwfds",
+    "created_at": 213124123,
+    "updated_at": 213124123,
+    "name": "service.cid",
+    "type": "lumen",
+    "language": "php",
+    "api_key": "dfsdfdsgfgegfdgdfgfdgfdg"
+  },
+  {
+    "id": "sdfdsfdersfd",
+    "user_id": "fgfderggerrwfds",
+    "created_at": 213124123,
+    "updated_at": 213124123,
+    "name": "service.cid",
+    "type": "laravel",
+    "language": "java",
+    "api_key": "dfsdfdsgfgegfdgdfgfdgfdg"
+  }
+]

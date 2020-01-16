@@ -1,0 +1,86 @@
+[
+  {
+    "id": 125521213,
+    "project_id": 123,
+    "created_at": 213124123,
+    "stage": "production",
+    "severity": "error",
+    "handled": false,
+    "status": "open",
+    "error_class": "Illuminate\\Database\\QueryException",
+    "message": "SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'domains' at row 1 (SQL: insert into `whois_data` (`range_from`, `range_to`, `network`, `subnet_mask`, `kind`, `provider_type`, `domains`, `network_name_1`, `network_name_2`, `payload`, `asn`, `updated_at`, `created_at`) values (3224257536, 3224260351",
+    "context": "Components/Rabbit/Interpreters/WhoisDataFillerInterpreter.php:29",
+    "exception": {
+      "class": "Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}",
+      "file": "/home/vagrant/gs/gs.service.id/src/vendor/illuminate/container/Util.php",
+      "line": 36,
+      "code": {
+        "25": "",
+        "26": "        $whoisData->network_name_2 = $this->message['network_name_2'];",
+        "27": "        $whoisData->payload = $this->message['contact_information'];",
+        "28": "        $whoisData->asn = $this->message['asn'];",
+        "29": "        $whoisData->save();",
+        "30": "    }",
+        "31": "}"
+      },
+      "args": []
+    }
+
+  },
+  {
+    "id": 1221234513,
+    "project_id": 123,
+    "created_at": 2131241233,
+    "stage": "production",
+    "severity": "error",
+    "handled": false,
+    "status": "open",
+    "error_class": "Illuminate\\Database\\QueryException",
+    "message": "SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'domains' at row 1 (SQL: insert into `whois_data` (`range_from`, `range_to`, `network`, `subnet_mask`, `kind`, `provider_type`, `domains`, `network_name_1`, `network_name_2`, `payload`, `asn`, `updated_at`, `created_at`) values (3224257536, 3224260351",
+    "context": "Components/Rabbit/Interpreters/WhoisDataFillerInterpreter.php:29",
+    "exception": {
+      "class": "Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}",
+      "file": "/home/vagrant/gs/gs.service.id/src/vendor/illuminate/container/Util.php",
+      "line": 567,
+      "code": {
+        "25": "",
+        "26": "        $whoisData->network_name_2 = $this->message['network_name_2'];",
+        "27": "        $whoisData->payload = $this->message['contact_information'];",
+        "28": "        $whoisData->asn = $this->message['asn'];",
+        "29": "        $whoisData->save();",
+        "30": "    }",
+        "31": "}"
+      },
+      "args": []
+    }
+
+  },
+  {
+    "id": 1221213,
+    "project_id": 123,
+    "created_at": 213124111,
+    "stage": "production",
+    "severity": "error",
+    "handled": false,
+    "status": "open",
+    "error_class": "Illuminate\\Database\\QueryException",
+    "message": "SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'domains' at row 1 (SQL: insert into `whois_data` (`range_from`, `range_to`, `network`, `subnet_mask`, `kind`, `provider_type`, `domains`, `network_name_1`, `network_name_2`, `payload`, `asn`, `updated_at`, `created_at`) values (3224257536, 3224260351",
+    "context": "Components/Rabbit/Interpreters/WhoisDataFillerInterpreter.php:29",
+    "exception": {
+      "class": "Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}",
+      "file": "/home/vagrant/gs/gs.service.id/src/vendor/illuminate/container/Util.php",
+      "line": 345,
+      "code": {
+        "25": "",
+        "26": "        $whoisData->network_name_2 = $this->message['network_name_2'];",
+        "27": "        $whoisData->payload = $this->message['contact_information'];",
+        "28": "        $whoisData->asn = $this->message['asn'];",
+        "29": "        $whoisData->save();",
+        "30": "    }",
+        "31": "}"
+      },
+      "args": []
+    }
+
+  }
+]

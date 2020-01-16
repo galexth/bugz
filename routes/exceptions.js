@@ -3,6 +3,9 @@ let controller = require('../controllers/exceptionController');
 
 let router = express.Router();
 
+// TODO
+// router.route('/alias').get(controller.indexAlias, controller.index);
+
 router.route('/')
     .get(controller.index)
     .post(controller.store);

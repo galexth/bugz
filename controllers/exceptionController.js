@@ -1,16 +1,22 @@
 let Exception = require('../models/exception');
+let Paginator = require('../utils/paginator');
 
 module.exports.index = async (req, res) => {
 
-	const queryStr = req.query.filter(el => ['stage', 'severity'].indexOf(el) >= 0);
+	// TODO
+	// const queryStr = req.query.filter(el => ['stage', 'severity'].indexOf(el) >= 0);
 
-	console.log(queryStr);
+	let sort = req.params.sort || '-created_at';
+	let fields = req.params.fields || '';
 
-	let query = Exception.find(queryStr);
+	let query = Exception.find({})
+		.select(fields.split(',').join(' '))
+		.sort(sort.split(',').join(' '));
 
-	const collection = await query;
+	let results = await new Paginator(query, req.params.offset, req.params.limit)
+		.paginate();
 
-	return res.json(collection);
+	return res.json(results);
 };
 
 module.exports.store = async (req, res) => {

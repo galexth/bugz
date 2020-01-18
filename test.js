@@ -1,5 +1,5 @@
 require('dotenv').config();
+let _ = require('lodash');
+var object = { asdf: 'aadsdsa', 'b': '2', c: 3 };
 
-let asd = {};
-
-console.log(typeof asdd);
+console.log(_.pick(object, ['asdf', 'c']))

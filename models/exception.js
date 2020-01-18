@@ -4,6 +4,7 @@ let schema = new mongoose.Schema({
 	project: {
 		type: mongoose.Schema.Types.ObjectId,
 		ref: 'Project',
+		required: true,
 	},
 	stage: {
 		type: String,

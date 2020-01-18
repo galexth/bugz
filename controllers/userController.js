@@ -27,7 +27,7 @@ module.exports.update = async (req, res) => {
 };
 
 module.exports.show = async (req, res) => {
-	const user = await User.findById(req.params.id);
+	const user = await User.findById(req.params.id).populate('projects');
 	return res.json(user);
 };
 

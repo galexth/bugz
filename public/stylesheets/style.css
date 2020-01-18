@@ -1,8 +1,6 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.header-top {
+  height: 40px;
 }
-
-a {
-  color: #00B7FF;
+.header-bottom {
+  height: 40px;
 }

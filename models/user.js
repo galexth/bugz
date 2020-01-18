@@ -21,10 +21,6 @@ let schema = new mongoose.Schema({
 			},
 		},
 	},
-	projects: {
-		type: mongoose.Schema.Types.ObjectId,
-		ref: 'Project',
-	},
 }, {
 	timestamps: {
 		createdAt: 'created_at',

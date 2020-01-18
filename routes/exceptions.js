@@ -1,7 +1,7 @@
 let express = require('express');
 let controller = require('../controllers/exceptionController');
 
-let router = express.Router();
+let router = express.Router({ mergeParams: true });
 
 // TODO
 // router.route('/alias').get(controller.indexAlias, controller.index);

@@ -1,7 +1,43 @@
 doctype html
 html
   head
-    title= title
+    title=title
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css', integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh", crossorigin="anonymous")
   body
-    block content
+    div.header
+      div(class="header-top container-fluid bg-dark")
+        div.project-header.float-left.col-4 service.cid
+        div.filters.float-right.col-4 settings
+      div(class="header-bottom container-fluid bg-secondary")
+    div.container-fluid
+      div.row.flex-xl-nowrap
+        div.col-2.bg-light.bg-sidebar&attributes({height: "calc(100vh - 4rem)"})
+          div
+            |<span>104</span> Errors
+          ul
+            li
+              div
+                a(href="#") Introduced Today(<span>104</span>)
+            li
+              div
+                a(href="#") Open(<span>104</span>)
+                ul
+                  li
+                    a(href="#") For review(<span>104</span>)
+                  li
+                    a(href="#") Assigned to me(<span>104</span>)
+                  li
+                    a(href="#") Assigned to anyone(<span>104</span>)
+                  li
+                    a(href="#") Issue created(<span>104</span>)
+            li
+              a(href="#") Fixed(<span>104</span>)
+            li
+              a(href="#") Snoozed(<span>104</span>)
+            li
+              a(href="#") Ignored(<span>104</span>)
+        div.col-10
+          block content

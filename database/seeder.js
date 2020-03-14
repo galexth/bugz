@@ -1,6 +1,7 @@
 require('dotenv').config();
 let mongoose = require('mongoose');
 let faker = require('faker');
+let _ = require('lodash');
 
 let User = require('../models/user');
 let Project = require('../models/project');
@@ -19,7 +20,7 @@ const truncate = () => {
 };
 
 const randomClass = () => {
-	return faker.lorem.sentence().split(' ').join('\\\\')
+	return _.trim(faker.lorem.words(), '.').split(' ').map(_.upperFirst).join('\\')
 };
 
 const randomFile = () => {
@@ -29,7 +30,7 @@ const randomFile = () => {
 const seed = async () => {
 	await truncate();
 
-	for (let i = 0; i < 5; i++) {
+	for (let i = 0; i < 3; i++) {
 		const user = await User.create({
 			first_name: faker.name.firstName(),
 			last_name: faker.name.lastName(),
@@ -45,7 +46,7 @@ const seed = async () => {
 				api_key: faker.random.uuid(),
 			});
 
-			for (let i = 0; i < 50; i++) {
+			for (let i = 0; i < 25; i++) {
 
 				let files = [];
 

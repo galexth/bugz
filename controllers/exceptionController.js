@@ -6,7 +6,8 @@ let _ = require('lodash');
 
 module.exports.index = catchAsync(async (req, res) => {
 
-	const queryStr = _.pick(req.query, ['stage', 'severity']);
+	let queryStr = _.pick(req.query, ['stage', 'severity']);
+	queryStr.project = req.params.project;
 
 	let sort = req.params.sort || '-created_at';
 	let fields = req.params.fields || '';

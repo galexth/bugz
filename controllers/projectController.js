@@ -7,7 +7,7 @@ module.exports.index = async (req, res) => {
 
 module.exports.store = async (req, res) => {
 	const project = await Project.create(req.body);
-	res.status(222).json(project);
+	res.status(201).json(project);
 };
 
 module.exports.update = async (req, res) => {
@@ -38,7 +38,7 @@ module.exports.delete = async (req, res) => {
 	if (! result) {
 		return res.json({
 			status: false,
-			message: 'Model not found',
+			message: 'Model not found.',
 		})
 	}
 

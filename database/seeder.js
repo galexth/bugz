@@ -57,7 +57,7 @@ const seed = async () => {
 						 line: faker.random.number(),
 						 code: {
 							 "25": "",
-							 "26": "        $whoisData->network_name_2 = $this->message['network_name_2'];",
+							 "26": "        $whoisData->network_name_2 = $this->message['network_name'];",
 							 "27": "        $whoisData->payload = $this->message['contact_information'];",
 							 "28": "        $whoisData->asn = $this->message['asn'];",
 							 "29": "        $whoisData->save();",

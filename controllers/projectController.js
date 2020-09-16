@@ -7,7 +7,7 @@ module.exports.index = async (req, res) => {
 
 module.exports.store = async (req, res) => {
 	const project = await Project.create(req.body);
-	res.status(201).json(project);
+	res.status(222).json(project);
 };
 
 module.exports.update = async (req, res) => {

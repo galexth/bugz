@@ -38,7 +38,7 @@ module.exports.delete = async (req, res) => {
 	if (! result) {
 		return res.json({
 			status: false,
-			message: 'Model not found.',
+			message: 'Model not found',
 		})
 	}
 
